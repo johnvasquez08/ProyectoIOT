@@ -12,8 +12,9 @@ const TanqueVolumen: React.FC<Props> = ({ tanque }) => {
   const volumenMaximo: number= Math.PI * Math.pow(tanque.radio, 2) * tanque.nivelMaximo;
   const volumenActual: number = Math.PI * Math.pow(tanque.radio, 2) * tanque.nivelActual;
   const porcentaje = (volumenActual / volumenMaximo) * 100;
-
+  
   return (
+    
     <div className="bg-white  rounded-2xl shadow-md p-6 mb-6 w-full max-w-md">
       <h2 className="text-xl font-semibold text-gray-900  mb-3">
         Volumen del {tanque.nombre}

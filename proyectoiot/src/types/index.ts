@@ -14,3 +14,8 @@ export type Consumo = {
     fecha: string;
     consumo: number;
 }
+
+export type HistorialItem = {
+  fecha: string;
+  consumo: number;
+};
